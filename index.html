@@ -12,22 +12,27 @@
       <div class="title">
         <h1>SketchPad</h1>
       </div>
+      <div class="mode">Mode: Coloring</div>
       <div class="content">
         <div class="board"></div>
         <div class="buttons">
-          <button>Black</button>
-          <button>White</button>
-          <button>Random</button>
-          <button>Reset</button>
-          <button>Eraser</button>
+          <button class="black-btn"onclick="changeColor('black')">Black</button>
+          <button class="grey-btn"onclick="changeColor('grey')">Grey</button>
+          <button class="eraser-btn"onclick="changeColor('white')">Eraser</button>
+          <button class="random-btn"onclick="changeColor('random')">Random</button>
+          <button class="reset-btn"onclick="resetBoard()">Reset</button>
         </div>
         <input
           type="text"
           placeholder="Grid parameters"
           value="16"
+          class="input-size"
           onchange="changeSize(this.value)"
         />
         <button>Set Size</button>
+        <div class="error">
+            Input must be between 2 and 100
+        </div>
       </div>
     </div>
     <script src="app.js"></script>
