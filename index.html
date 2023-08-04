@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="reset" href="reset.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>SketchPad</h1>
+      </div>
+      <div class="content">
+        <div class="board"></div>
+        <div class="buttons">
+          <button>Black</button>
+          <button>White</button>
+          <button>Random</button>
+          <button>Reset</button>
+          <button>Eraser</button>
+        </div>
+        <input
+          type="text"
+          placeholder="Grid parameters"
+          value="16"
+          onchange="changeSize(this.value)"
+        />
+        <button>Set Size</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
